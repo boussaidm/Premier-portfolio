@@ -1,0 +1,48 @@
+.presentation {
+    background-color: coral;
+    padding-top: 239px;
+    padding-bottom: 200px;
+    justify-content: center;
+}
+
+.presentation_photo {
+    background-color: black;
+    border-radius: 50%;
+    padding: 105px;
+    margin-right: 150px;
+}
+
+.presentation_texte {
+    width: 40vw;
+    border-left: 2px solid;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+}
+
+.trans {
+    transform: translateX(-100%);
+}
+
+.presentation_titre {
+    padding-bottom: 18px;
+    margin-left: 15px;
+}
+
+.presentation_moi {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 375px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation_photo {
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+    .presentation_texte {
+        width: auto;
+        margin-left: -5px;
+    }
+}

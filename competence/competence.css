@@ -1,0 +1,23 @@
+.competence {
+    align-items: center;
+    padding-top: 180px;
+}
+
+.competence_entete {
+    background-color: blueviolet;
+    width: 307px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.fleche {
+    width: 32px
+}
+
+.competence_barre {
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,96 @@
+/*variables*/
+
+:root {
+    --color-nav: #fff;
+    --color-hyperlien: black;
+    --font: 'Poppins', sans-serif;
+}
+
+
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*css de bases*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*css de bases*/
+
+body {
+    background-color: #224351;
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-hyperlien);
+}
+
+
+/*accueil*/
+
+header {
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.navbar {
+    align-items: flex-end;
+    width: 100vw;
+    position: fixed;
+    padding: 20px;
+}
+
+.nav {
+    transform: translateX(89%);
+    transition: all 1s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.nav_show {
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.symbole {
+    background-color: aliceblue;
+}
+
+.bonhomme {
+    margin-right: 18px;
+}
+
+.ecrou {
+    margin-right: 54px;
+}
+
+.message {
+    width: 32px;
+    margin-right: 42px;
+}
+
+.identite {
+    padding-top: 303px;
+    font-size: 6vmin;
+}
+
+.caractere {
+    display: inline-block;
+    padding-right: 5px;
+}
