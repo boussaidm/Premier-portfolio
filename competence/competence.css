@@ -3,6 +3,10 @@
     padding-top: 180px;
 }
 
+.competence_categories {
+    overflow-y: hidden;
+}
+
 .competence_entete {
     background-color: blueviolet;
     width: 307px;
@@ -10,14 +14,62 @@
     justify-content: center;
     align-items: center;
     padding-top: 5px;
+    z-index: 2;
 }
 
 .fleche {
-    width: 32px
+    width: 32px;
+    position: relative;
+    transition: all 1s;
+}
+
+.fleche_turn {
+    transform: rotate(180deg);
 }
 
 .competence_barre {
     background-color: #fff;
-    padding: 50px;
     margin-bottom: 50px;
+}
+
+.front_end {
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+.front_show {
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+.language {
+    background-color: greenyellow;
+    justify-content: center;
+    padding: 10px;
+}
+
+.competence_titre {
+    text-transform: uppercase;
+}
+
+.css {
+    margin-right: 8px;
+}
+
+.js {
+    margin-right: 18px;
+}
+
+.barre {
+    width: 161px;
+    height: 6px;
+    background-color: yellow;
+    margin-left: 10px;
+}
+
+.barre_progress {
+    width: 0;
+    height: 6px;
+    transition: all 2s ease-in-out;
+    background-color: violet;
 }
