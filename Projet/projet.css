@@ -1,0 +1,40 @@
+
+.presentation_projet{
+    background-color: darkslateblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.les_projets{
+    background-color: darksalmon;
+    width: 50%;
+}
+
+.voir_projet{
+    background-color: deeppink;
+    padding-top: 220px;
+    width: 300px;
+}
+
+.separation{
+    background-color: #fff;
+    width: 631px;
+    height: 2px;
+    margin: 59px 0 0 105px;
+}
+
+/* .test{
+
+} */
+
+.projet_pair{
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   margin: 62px 0 ;
+}
+
+.projet_impaire{
+     justify-content: center;
+ }

@@ -8,7 +8,6 @@
     width: 39%;
     justify-content: center;
     align-items: center;
-    background-color: rgb(138, 20, 20);
 }
 .choix_competence{
     width: 55%;
@@ -20,26 +19,28 @@
 
 .competence_detail{
     width: 45%;
-    min-width: 421px;
-    background-color: darksalmon;
-
+    min-width: 421px; 
 }
+
 .front{
-    /*transform: translateX(-200%);
-    transition: 1s ease;*/
+    transform: translateY(-100%);
+    transition: 1s ease;
+    
 }
 
-/*.back{
-    transform: translateY(-140%);
+.back{
+    
     transition: 1s ease-in-out;
-
+    transform: translateX(-300%);
+    
 }
 
 .maquette{
-    transform: translateX(200%);
+    transform: translate(276%, -254px);
     transition: 1s ease-in-out;
+    
 
-} */
+}
 .les_languages{
     width: 33%;
     font-size: 21px;
@@ -59,6 +60,7 @@
 .barre_niveau{
     background-color: #fff;
     margin-bottom: 41px;
+    width: 208px;
 }
 
 .niveau{
@@ -66,3 +68,4 @@
     width: 20%;
     padding-top: 20px;
 }
+
