@@ -16,6 +16,7 @@
     <!--Accueil-->
 
     <header class="column">
+        <!--navbar-->
         <nav class="navbar column">
             <span class="nav un row">
                 <img src="images/bonhomme.png" alt="moi" class="bonhomme">
@@ -38,6 +39,7 @@
         </nav>
         <h1 class="identite"></h1>
     </header>
+    <!--Ma présentation-->
     <section class="presentation row">
         <div class="presentation_photo"></div>
         <div class="presentation_texte">
@@ -48,48 +50,88 @@
             </div>
         </div>
     </section>
-    <section class="competence column">
-        <div class="competence_categories column">
-            <div class="competence_entete column">
-                <h2 class="categorie_titre">Front-End</h2>
-                <img src="images/fleche.png" alt="fleche" class="fleche">
+    <!--Mes compétences-->
+    <section class="competence row">
+        <div class="categorie_competence column">
+            <button class="choix_competence btn_front">Front-end</button>
+            <button class="choix_competence btn_back">Back-end</button>
+            <button class="choix_competence btn_maq">Maquette</button>
+        </div>
+        <!--Front-end-->
+        <div class="competence_detail front row">
+            <div class="les_languages column">
+                <div class="language"><p class="nom_langauge">html</p></div>
+                <div class="language"><p class="nom_langauge">css</p></div>
+                <div class="language"><p class="nom_langauge">js</p></div>
             </div>
-            <div class="competence_barre front_end">
-                <div class="language row">
-                    <p class="competence_titre">html</p>
-                    <div class="barre">
-                        <div class="progression_html barre_progress"></div>
-                    </div>
+            <div class="les_barres column">
+                <!--barre html-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
                 </div>
-                <div class="language row">
-                    <p class="competence_titre css">css</p>
-                    <div class="barre">
-                        <div class="progression_css barre_progress"></div>
-                    </div>
+                <!--barre css-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
                 </div>
-                <div class="language row">
-                    <p class="competence_titre js">JS</p>
-                    <div class="barre">
-                        <div class="progression_js barre_progress"></div>
-                    </div>
+                <!--barre js-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
                 </div>
             </div>
         </div>
-        <div class="competence_categories">
-            <div class="competence_entete column">
-                <h2 class="categorie_titre">Back-End</h2>
-                <img src="images/fleche.png" alt="fleche" class="fleche">
+        <!--Back-end-->
+        <div class="competence_detail back row">
+            <div class="les_languages column">
+                <div class="language"><p class="nom_langauge">html</p></div>
+                <div class="language"><p class="nom_langauge">css</p></div>
+                <div class="language"><p class="nom_langauge">js</p></div>
             </div>
-            <div class="competence_barre deux">
+            <div class="les_barres column"> 
+                <!--barre html-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
+                </div> 
+                <!--barre css-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
+                </div>
+                <!--barre js-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
+                </div>
             </div>
-        </div>
-        <div class="competence_categories">
-            <div class="competence_entete column">
-                <h2 class="categorie_titre">Maquette</h2>
-                <img src="images/fleche.png" alt="fleche" class="fleche">
+        </div> 
+        <!--maquette-->
+        <div class="competence_detail maquette row">
+            <div class="les_languages column">
+                <div class="language"><p class="nom_langauge">html</p></div>
+                <div class="language"><p class="nom_langauge">css</p></div>
+                <div class="language"><p class="nom_langauge">js</p></div>
             </div>
-            <div class="competence_barre trois"></div>
-        </div>
+            <div class="les_barres column">
+                <!--barre html-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
+            </div>
+                <!--barre css-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
+                </div>
+                <!--barre js-->
+                <p class="note_niveau">Bien</p>
+                <div class="barre_niveau">
+                    <div class="niveau"></div>
+                </div>
+            </div>
+        </div> 
     </section>
     <script src="accueil/nom2.js"></script>
     <script src="accueil/navbar.js"></script>

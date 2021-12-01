@@ -1,19 +1,27 @@
-var front = document.querySelector('.front_end');
-var front_show = document.querySelector('.front_show');
-var fleche = document.querySelector('.fleche');
-var turn = document.querySelector('.fleche_turn');
-var html = document.querySelector('.progression_html');
-var css = document.querySelector('.progression_css');
-var js = document.querySelector('.progression_js');
+ var btnFront = document.querySelector('.btn_front');
+// var btnBack = document.querySelector('.btn_back');
+// var btnMaq = document.querySelector('.btn_maq');
+var compFront = document.querySelector('.front');
+var compBack = document.querySelector('.back');
+var compMaq = document.querySelector('.maquette');
 
-fleche.addEventListener('click', () => {
-    front.classList.toggle('front_show');
-    fleche.classList.toggle('fleche_turn');
-    setTimeout(function progress() {
-
-        html.style.width = '90%';
-        css.style.width = '90%';
-        js.style.width = '50%';
-
-    }, 250);
+//clique sur le bouton front-end
+btnFront.addEventListener('click', ()=> {
+    //compBack.style.transform = 'translateY(-200%)';
+    //compMaq.style.transform = 'translateX(200%)';
+    compFront.style.transform = 'translateX(0em)';
 })
+
+// //Clique sur le bouton back-end
+// btnBack.addEventListener('click', ()=> {
+//     compMaq.style.transform = 'translateX(200%)';
+//     compFront.style.transform = 'translateX(-200%)';
+//     compBack.style.transform = 'translateY(0)';
+// })
+
+// //Clique sur le bouton maquette
+// btnMaq.addEventListener('click', ()=> {
+//     compBack.style.transform = 'translateY(-200%)';
+//     compFront.style.transform = 'translateX(-200%)';
+//     compMaq.style.transform = 'translateX(-100%)';
+// })
