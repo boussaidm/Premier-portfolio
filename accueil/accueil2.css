@@ -45,7 +45,7 @@ a {
 
 /*accueil*/
 
-header{
+header {
     align-items: center;
     padding-bottom: 50vh;
     background-image: url(../images/fondAccueil.jpg);
@@ -58,6 +58,7 @@ header{
     width: 100vw;
     position: fixed;
     padding: 20px;
+    z-index: 1;
 }
 
 .haut {
@@ -76,23 +77,22 @@ header{
     transform: translateX(-16px);
 }
 
-.icone{
+.icone {
     width: 30px;
 }
 
-.lien_text{
+.lien_text {
     margin-left: 5px;
+    color: var(--color-font);
 }
-
 
 .identite {
     padding-top: 50vh;
     font-size: 6vmin;
-    color: #fff;
+    color: var(--color-font);
 }
 
 .caractere {
     display: inline-block;
     padding-right: 5px;
 }
-

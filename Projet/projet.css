@@ -1,22 +1,24 @@
 .presentation_projet {
-    background-color: darkslateblue;
+    background-image: url(../images/fondProjet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     display: flex;
     justify-content: center;
-  
 }
 
 .les_projets {
-    background-color: darksalmon;
     width: 39%;
     min-width: 300px;
+    color: var(--color-font);
 }
 
 .voir_projet {
-    background-color: deeppink;
+    background-color: black;
     padding-top: 220px;
     width: 300px;
     min-width: 300px;
+    margin-right: 20px;
 }
 
 .projet_pair {
@@ -39,31 +41,33 @@
 .titre_projet_impair {
     transform: translateY(12em);
     transition: 1.5s ease-in-out;
-    
 }
 
 .titre_projet_pair {
     transform: translateY(-10em);
     transition: 1.5s ease-in-out;
-    
 }
 
 
 /*Petit ecran*/
 
 @media screen and (max-width: 1263px) {
-    .projet_impair{
+    .projet_impair {
         flex-direction: column;
-        transform: translateY(0);
-        transition: none;
         border: none;
         overflow: visible;
     }
-    .projet_pair{
+    .projet_pair {
         flex-direction: column;
-        transform: translateY(0);
-        transition: none;
         border: none;
         overflow: visible;
+    }
+    .titre_projet_impair {
+        transform: translateY(0);
+        transition: none;
+    }
+    .titre_projet_pair {
+        transform: translateY(0);
+        transition: none;
     }
 }

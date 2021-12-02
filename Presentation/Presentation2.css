@@ -5,11 +5,11 @@
 }
 
 .presentation_photo {
-    background-color: black;
+    background-image: url(../images/moi.svg);
+    background-size: contain;
     border-radius: 50%;
     padding: 105px;
     margin-right: 150px;
-    
 }
 
 .presentation_texte {
@@ -50,15 +50,17 @@
 }
 
 @media screen and (max-width: 864px) {
-    .presentation{
+    .presentation {
         flex-direction: column;
     }
-
-    .presentation_texte{
-        border: none;
-        margin-top: 20px;
+    .presentation_photo {
+        margin-right: 0px;
     }
-    .trans{
+    .presentation_texte {
+        border: none;
+        margin-top: 78px;
+    }
+    .trans {
         transform: none;
         opacity: 1;
     }
