@@ -7,21 +7,21 @@ var compMaq = document.querySelector('.maquette');
 
 //clique sur le bouton front-end
 btnBack.addEventListener('click', ()=> {
-    compFront.style.transform = 'translateY(-100%)';
-    compMaq.style.transform = 'translate(276%, -254px)';
+    compFront.style.transform = 'translateY(-337%)';
+    compMaq.style.transform = 'translate(276%, -74px)';
     compBack.style.transform = 'translateX(0)';
 })
 
 //Clique sur le bouton back-end
 btnFront.addEventListener('click', ()=> {
-    compMaq.style.transform = 'translate(276%, -254px)';
+    compMaq.style.transform = 'translate(276%, -74px)';
     compBack.style.transform = 'translateX(-300%)';
-    compFront.style.transform = 'translateY(100%)';
+    compFront.style.transform = 'translateY(106px)';
 })
 
 //Clique sur le bouton maquette
 btnMaq.addEventListener('click', ()=> {
-    compFront.style.transform = 'translateY(-100%)';
+    compFront.style.transform = 'translateY(-337%)';
     compBack.style.transform = 'translateX(-300%)';
-    compMaq.style.transform = 'translate(0, -254px)';
+    compMaq.style.transform = 'translate(0, -74px)';
 })

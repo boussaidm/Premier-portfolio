@@ -1,7 +1,7 @@
 /*variables*/
 
 :root {
-    --color-nav: #fff;
+    --color-font: #fff;
     --color-hyperlien: black;
     --font: 'Poppins', sans-serif;
 }
@@ -33,7 +33,7 @@
 /*css de bases*/
 
 body {
-    background-color: #224351;
+    background-color: #CAB39D;
     font-family: var(--font);
 }
 
@@ -45,9 +45,12 @@ a {
 
 /*accueil*/
 
-header {
+header{
     align-items: center;
-    padding-bottom: 300px;
+    padding-bottom: 50vh;
+    background-image: url(../images/fondAccueil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar {
@@ -57,40 +60,39 @@ header {
     padding: 20px;
 }
 
-.nav {
-    transform: translateX(89%);
+.haut {
+    transform: translateX(88%);
     transition: all 1s ease-in-out;
     margin-bottom: 10px;
 }
 
-.nav_show {
-    transform: translateX(0);
+.bas {
+    transform: translateX(84%);
     transition: all 1s ease-in-out;
+    margin-bottom: 10px;
 }
 
-.symbole {
-    background-color: aliceblue;
+.nav:hover {
+    transform: translateX(-16px);
 }
 
-.bonhomme {
-    margin-right: 18px;
+.icone{
+    width: 30px;
 }
 
-.ecrou {
-    margin-right: 54px;
+.lien_text{
+    margin-left: 5px;
 }
 
-.message {
-    width: 32px;
-    margin-right: 42px;
-}
 
 .identite {
-    padding-top: 303px;
+    padding-top: 50vh;
     font-size: 6vmin;
+    color: #fff;
 }
 
 .caractere {
     display: inline-block;
     padding-right: 5px;
 }
+

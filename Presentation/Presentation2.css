@@ -1,7 +1,6 @@
 .presentation {
-    background-color: coral;
-    padding-top: 239px;
-    padding-bottom: 200px;
+    padding-top: 45vh;
+    padding-bottom: 45vh;
     justify-content: center;
 }
 
@@ -10,17 +9,20 @@
     border-radius: 50%;
     padding: 105px;
     margin-right: 150px;
+    
 }
 
 .presentation_texte {
     width: 40vw;
+    min-width: 480px;
     border-left: 2px solid;
-    padding-bottom: 10px;
     overflow-x: hidden;
+    color: var(--color-font);
 }
 
 .trans {
     transform: translateX(-100%);
+    opacity: 0;
 }
 
 .presentation_titre {
@@ -44,5 +46,20 @@
     .presentation_texte {
         width: auto;
         margin-left: -5px;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .presentation{
+        flex-direction: column;
+    }
+
+    .presentation_texte{
+        border: none;
+        margin-top: 20px;
+    }
+    .trans{
+        transform: none;
+        opacity: 1;
     }
 }

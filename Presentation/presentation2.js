@@ -1,11 +1,25 @@
 //Apparition du texte "a propos de moi"
-window.addEventListener('scroll', () => {
-    var niveauScroll = window.scrollY;
+
+window.addEventListener('scroll',() => {
+   
     var trans = document.querySelector('.trans');
-    if (niveauScroll >= 342) {
+    var hauteurFenetreP = window.innerHeight;
+    var hauteurScrollP = window.scrollY;
+    var hauteurBodyP = document.body.offsetHeight;
+
+    // console.log(hauteurBody)
+    var scrollValueP = (hauteurFenetreP + hauteurScrollP) / hauteurBodyP
+    console.log(scrollValueP);
+
+    if(scrollValueP > 0.42) {
+
+       for(var i =0; i<impair.length; i++) {
+
         trans.style.transform = 'translateX(0)';
-        trans.style.transition = '0.8s ease-in-out';
-    } else {
-        trans.style.transform = 'translateX(-100%)';
+        trans.style.opacity = "1";
+        trans.style.transition = 'all 1.5s ease-in-out';
+
+       }
+            
     }
 })
