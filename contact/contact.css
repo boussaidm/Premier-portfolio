@@ -1,0 +1,17 @@
+.contact {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lien_contact{
+    padding: 50px 20px;
+}
+
+.logo_contact{
+    margin-right: 15px;
+}
+
+.lien{
+    color: var(--color-font);
+}

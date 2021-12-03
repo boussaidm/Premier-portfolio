@@ -57,15 +57,15 @@
 
 .front {
     transform: translateY(-337%);
-    transition: 1.5s ease;
+    transition: 1s ease;
 }
 
 .back {
-    transition: 1.5s ease-in-out;
+    transition: 1s ease-in-out;
     transform: translateX(-300%);
 }
 
 .maquette {
-    transform: translate(276%, -74px);
-    transition: 1.5s ease-in-out;
+    transform: translate(300%, -74px);
+    transition: 1s ease-in-out;
 }

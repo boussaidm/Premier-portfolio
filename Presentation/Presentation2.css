@@ -4,6 +4,8 @@
     justify-content: center;
 }
 
+
+
 .presentation_photo {
     background-image: url(../images/moi.svg);
     background-size: contain;
@@ -20,19 +22,28 @@
     color: var(--color-font);
 }
 
-.trans {
+.color{
+    color: rgb(78, 36, 36);
+}
+
+.ma_presentation {
     transform: translateX(-100%);
     opacity: 0;
+    margin-bottom: 20px;
 }
 
 .presentation_titre {
     padding-bottom: 18px;
     margin-left: 15px;
 }
-
+.nom_prenom{
+    margin: 0 0 5px 15px;
+}
 .presentation_moi {
     margin-left: 15px;
 }
+
+
 
 @media screen and (max-width: 375px) {
     .presentation {
@@ -60,7 +71,7 @@
         border: none;
         margin-top: 78px;
     }
-    .trans {
+    .ma_presentation {
         transform: none;
         opacity: 1;
     }

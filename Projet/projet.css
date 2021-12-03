@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 10vh;
 }
 
 .les_projets {
@@ -14,7 +15,6 @@
 }
 
 .voir_projet {
-    background-color: black;
     padding-top: 220px;
     width: 300px;
     min-width: 300px;
@@ -40,14 +40,31 @@
 
 .titre_projet_impair {
     transform: translateY(12em);
-    transition: 1.5s ease-in-out;
+    transition: 1.3s ease-in-out;
 }
 
 .titre_projet_pair {
     transform: translateY(-10em);
-    transition: 1.5s ease-in-out;
+    transition: 1.3s ease-in-out;
 }
 
+.instagram{
+    background-image: url(../images/instagramProjet.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.op{
+    background-image: url(../images/opProjet.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.titan{
+    background-image: url(../images/snkProjet.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /*Petit ecran*/
 

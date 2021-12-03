@@ -17,7 +17,7 @@
      console.log('salut')
      compMaq.style.transform = 'translate(276%, -74px)';
      compBack.style.transform = 'translateX(-300%)';
-     compFront.style.transform = 'translateY(106px)';
+     compFront.style.transform = 'translateY(116%)';
  })
 
  //Clique sur le bouton maquette

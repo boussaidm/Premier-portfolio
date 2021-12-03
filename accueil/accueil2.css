@@ -46,29 +46,34 @@ a {
 /*accueil*/
 
 header {
-    align-items: center;
+    align-items: flex-end;
     padding-bottom: 50vh;
     background-image: url(../images/fondAccueil.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.placement_nav{
+    display: flex;
+    align-items: flex-end;
+}
+
 .navbar {
     align-items: flex-end;
-    width: 100vw;
+    width: 250px;
     position: fixed;
     padding: 20px;
     z-index: 1;
 }
 
 .haut {
-    transform: translateX(88%);
+    transform: translateX(94%);
     transition: all 1s ease-in-out;
     margin-bottom: 10px;
 }
 
 .bas {
-    transform: translateX(84%);
+    transform: translateX(90%);
     transition: all 1s ease-in-out;
     margin-bottom: 10px;
 }
@@ -82,11 +87,17 @@ header {
 }
 
 .lien_text {
-    margin-left: 5px;
+    margin-left: 10px;
     color: var(--color-font);
 }
 
-.identite {
+.identite{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.identite_titre {
     padding-top: 50vh;
     font-size: 6vmin;
     color: var(--color-font);

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Presentation/Presentation2.css">
     <link rel="stylesheet" href="competence/competence.css">
     <link rel="stylesheet" href="Projet/projet.css">
+    <link rel="stylesheet" href="contact/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -22,43 +23,46 @@
             <span class="nav haut row">
                 <img src="images/moiLogo.png" alt="moi" class="icone">
                 <div class="lien">
-                    <a href="#" class="lien_text">A propos de moi</a>
+                    <a href="#aProposDeMoi" class="lien_text">A propos de moi</a>
                 </div>
             </span>
             <span class="nav bas row">
-                <img src="images/competence.png" alt="projets" class="icone">
+                <img src="images/competence.png" alt="competence" class="icone">
                 <div class="lien">
-                    <a href="#" class="lien_text">Mes projets</a>
+                    <a href="#competence" class="lien_text">Mes Compétences</a>
                 </div>
             </span>
             <span class="nav bas row">
                 <img src="images/projet.png" alt="projets" class="icone">
                 <div class="lien">
-                    <a href="#" class="lien_text">Mes projets</a>
+                    <a href="#projet" class="lien_text">Mes projets</a>
                 </div>
             </span>
             <span class="nav bas row">
                 <img src="images/contacter.png" alt="message" class="icone">
                 <div class="lien">
-                    <a href="#" class="lien_text">Me contacter</a>
+                    <a href="#contact_moi" class="lien_text">Me contacter</a>
                 </div>
             </span>
         </nav>
-        <h1 class="identite"></h1>
+        <div class="identite">
+        <h1 class="identite_titre"></h1>
+        </div>
     </header>
     <!--Ma présentation-->
-    <section class="presentation row">
+    <section class="presentation row " id="aProposDeMoi">
         <div class="presentation_photo"></div>
         <div class="presentation_texte">
-            <div class="trans">
+            <div class="ma_presentation">
                 <h3 class="presentation_titre">A propos de moi</h3>
-                <p class="presentation_moi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum necessitatibus quo quasi, similique, perspiciatis qui error nihil sit harum eveniet, alias vel! Aperiam qui amet, distinctio mollitia placeat et maxime consequuntur molestiae
-                    minima alias perspiciatis? Excepturi sint, ipsum saepe, quia porro fuga illo repudiandae, suscipit dolores eum ea quis?</p>
+                <p class="nom_prenom">Je m’appelle Meriem, développeuse web junior<span class="color"> back-end</span> et <span class="color">Front-end</span>.</p>
+                <p class="presentation_moi">Après quelques années d'études dans les sciences je souhaite débuter ma carrière professionnelle dans le domaine du développement web, pour lequel je me suis découverte une <span class="color">passion</span>. Je suis actuellement une formation développeur web et web mobile à l’AFPA st Jérôme à Marseille, me permettant d’acquérir des bases solides et entreprendre des projets qui me tiennent à cœur.</p>
             </div>
-        </div>
+            <a href="images/imageTest.png" class="test" download="Test">Mon CV</a>
+        </div>   
     </section>
     <!--Mes compétences-->
-    <section class="competence row">
+    <section class="competence row" id="competence">
         <div class="categorie_competence column">
             <button class="choix_competence btn_front">Front-end</button>
             <button class="choix_competence btn_back">Back-end</button>
@@ -104,11 +108,11 @@
             </div>
         </div>
     </section>
-    <section class="presentation_projet">
+    <section class="presentation_projet" id="projet">
         <div class="les_projets column">
             <div class="projet_impair row">
                 <div class="voir_projet instagram"></div>
-                <h2 class="titre_projet_impair ">Reproduction d'une page instagram</h2>
+                <h2 class="titre_projet_impair ">Instagram</h2>
             </div>
             <span class="separation"></span>
             <div class="projet_pair">
@@ -124,6 +128,24 @@
             </div>
         </div>
     </section>
+    <footer class="contact row" id="contact_moi">
+        <span class="lien_contact row">
+            <img src="images/contacter.png" alt="logo_enveloppe" class="logo_contact">
+            <a href="mailto:meriemboussaid13@gmail.com" class="lien">Envoyer un message</a>
+        </span>
+        <span class="lien_contact row">
+            <img src="images/telephone.png" alt="logo_telephone" class="logo_contact">
+            <a href="tel:+33768488914" class="lien">07.68.48.89.14</a>
+        </span>
+        <span class="lien_contact row">
+            <img src="images/github.png" alt="logo_github" class="logo_contact">
+            <a href="https://github.com/boussaidm" class="lien">meriemb</a>
+        </span>
+        <span class="lien_contact row">
+            <img src="images/linkedin.png" alt="logo_linkedin" class="logo_contact">
+            <a href="https://www.linkedin.com/in/meriem-boussaid-571194220/" class="lien">Meriem BOUSSAID</a>
+        </span>
+    </footer>
     <script src="accueil/nom2.js"></script>
     <script src="Presentation/presentation2.js"></script>
     <script src="competence/competence.js"></script>

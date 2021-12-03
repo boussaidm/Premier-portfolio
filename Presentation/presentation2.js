@@ -2,7 +2,7 @@
 
 window.addEventListener('scroll', () => {
 
-    var trans = document.querySelector('.trans');
+    var trans = document.querySelector('.ma_presentation');
     var hauteurFenetreP = window.innerHeight;
     var hauteurScrollP = window.scrollY;
     var hauteurBodyP = document.body.offsetHeight;
@@ -12,14 +12,12 @@ window.addEventListener('scroll', () => {
     console.log(scrollValueP);
 
     if (scrollValueP > 0.37) {
-
-        for (var i = 0; i < impair.length; i++) {
-
+        console.log('vasy')
             trans.style.transform = 'translateX(0)';
             trans.style.opacity = "1";
             trans.style.transition = 'all 1.5s ease-in-out';
 
-        }
+        
 
     }
 })

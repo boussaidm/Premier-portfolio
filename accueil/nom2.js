@@ -2,7 +2,7 @@
 
 var cara = "Meriem BOUSSAID";
 var tableau = cara.split('');
-var titre = document.querySelector('.identite');
+var titre = document.querySelector('.identite_titre');
 
 tableau.forEach((e) => {
 
@@ -13,7 +13,7 @@ tableau.forEach((e) => {
 
     })
     //Lorsque la souris passe les lettres s'éparpille
-var titreSpan = document.querySelector('.identite').childNodes;
+var titreSpan = document.querySelector('.identite_titre').childNodes;
 
 titre.addEventListener('mouseenter', () => {
         for (var i = 0; i < titreSpan.length; i++) {
