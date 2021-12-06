@@ -79,7 +79,7 @@ header {
 }
 
 .nav:hover {
-    transform: translateX(-16px);
+    transform: translateX(0);
 }
 
 .icone {

@@ -36,8 +36,9 @@
 .competence_detail {
     width: 45%;
     min-width: 421px;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .icone_competence {

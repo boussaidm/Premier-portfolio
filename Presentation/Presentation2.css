@@ -16,7 +16,6 @@
 
 .presentation_texte {
     width: 40vw;
-    min-width: 480px;
     border-left: 2px solid;
     overflow-x: hidden;
     color: var(--color-font);
