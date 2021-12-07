@@ -25,9 +25,8 @@
 .choix_competence {
     width: 75%;
     min-width: 134px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     margin: 60px 0 40px;
+    padding: 20px 0;
     background-color: #634b4b7c;
     border: none;
     border-radius: 6px;
@@ -35,19 +34,25 @@
     font-family: var(--font);
     color: var(--color-font);
     font-size: 25px;
+    justify-content: center;
+    display: flex;
 }
 
 .competence_detail {
     width: 45%;
-    min-width: 421px;
+    min-width: 395px;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
 }
 
 .icone_competence {
-    width: 64px;
+    width: 40px;
 }
 
 .competence_intitule {
