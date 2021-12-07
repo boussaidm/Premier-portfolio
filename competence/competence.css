@@ -1,15 +1,9 @@
 .competence {
     width: 100%;
-    overflow: hidden;
-    padding-top: 5vh;
-    padding-bottom: 15vh;
-}
-
-.competence {
-    width: 100%;
-    overflow: hidden;
+    /* overflow: hidden;*/
     padding-top: 5vh;
     padding-bottom: 25vh;
+    align-items: center;
 }
 
 .categorie_competence {
@@ -18,8 +12,18 @@
     align-items: center;
 }
 
+.presentation_competence{
+    overflow: hidden;
+}
+
+.competence_front,
+.competence_back,
+.competence_maquette {
+    align-items: center;
+}
+
 .choix_competence {
-    width: 55%;
+    width: 75%;
     min-width: 134px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -36,9 +40,10 @@
 .competence_detail {
     width: 45%;
     min-width: 421px;
-    /*justify-content: space-around;*/
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    transform: translateX(-100%);
 }
 
 .icone_competence {
@@ -57,16 +62,16 @@
 }
 
 .front {
-    transform: translateY(-337%);
+    
     transition: 1s ease;
 }
 
 .back {
     transition: 1s ease-in-out;
-    transform: translateX(-300%);
+    
 }
 
 .maquette {
-    transform: translate(300%, -74px);
+    
     transition: 1s ease-in-out;
 }

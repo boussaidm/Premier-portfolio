@@ -61,9 +61,11 @@ header {
 .navbar {
     align-items: flex-end;
     width: 250px;
-    position: fixed;
     padding: 20px;
     z-index: 1;
+    position: fixed;
+    top: 100px;
+    transition: 1s ease-in-out;
 }
 
 .haut {
@@ -106,4 +108,79 @@ header {
 .caractere {
     display: inline-block;
     padding-right: 5px;
+}
+
+@media screen and (max-width: 810px) {
+    .navbar {
+        
+        transform: translateX(100%);
+    }
+
+    .showNav{
+        transform: translateX(0);
+    }
+
+    .burger {
+        display: block;
+        height: 60px;
+        width: 60px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 3;
+        margin-right: 22px;
+        position: fixed;
+    }
+    
+    .bar {
+        width: 56px;
+        height: 3px;
+        background: white;
+        display: block;
+    }
+    
+    .showNav .bar {
+        background: transparent;
+        width: 0;
+        transition: 0.3s;
+    }
+    
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 56px;
+        height: 3px;
+        background-color: white;
+        display: block;
+        position: absolute;
+    }
+    
+    .bar::before {
+        transform: translateY(-12px);
+    }
+    
+    .showNav .bar::before {
+        transform: rotate(45deg);
+        transition: 0.7s;
+    }
+    
+    .bar::after {
+        transform: translateY(12px);
+    }
+    
+    .showNav .bar::after {
+        transform: rotate(-45deg);
+        transition: 0.7s;
+    }
+
+    .haut {
+        transform: translateX(0);
+        padding-bottom: 20px;
+        
+    }
+    
+    .bas {
+        transform: translateX(0);
+        padding-bottom: 20px;
+    }
 }
