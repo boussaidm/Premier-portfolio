@@ -53,9 +53,13 @@ header {
     background-size: cover;
 }
 
-.placement_nav{
+.placement_nav {
     display: flex;
     align-items: flex-end;
+}
+
+.burger {
+    display: none;
 }
 
 .navbar {
@@ -72,19 +76,16 @@ header {
     transform: translateX(94%);
     transition: all 1s ease-in-out;
     margin-bottom: 10px;
-   
 }
 
 .bas {
     transform: translateX(90%);
     transition: all 1s ease-in-out;
     margin-bottom: 10px;
-    
 }
 
 .nav:hover {
     transform: translateX(0);
-  
 }
 
 .icone {
@@ -92,11 +93,11 @@ header {
 }
 
 .lien_text {
-     margin-left: 10px; 
+    margin-left: 10px;
     color: var(--color-font);
 }
 
-.identite{
+.identite {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -110,7 +111,6 @@ header {
 
 .caractere {
     display: inline-block;
-    
 }
 
 @media screen and (max-width: 810px) {
@@ -120,16 +120,14 @@ header {
         -moz-transform: translateX(100%);
         -ms-transform: translateX(100%);
         -o-transform: translateX(100%);
-}
-
-    .showNav{
+    }
+    .showNav {
         transform: translateX(0);
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
-
+    }
     .burger {
         display: block;
         height: 60px;
@@ -141,20 +139,17 @@ header {
         margin-right: 22px;
         position: fixed;
     }
-    
     .bar {
         width: 56px;
         height: 3px;
         background: white;
         display: block;
     }
-    
     .showNav .bar {
         background: transparent;
         width: 0;
         transition: 0.3s;
     }
-    
     .bar::before,
     .bar::after {
         content: "";
@@ -164,31 +159,24 @@ header {
         display: block;
         position: absolute;
     }
-    
     .bar::before {
         transform: translateY(-12px);
     }
-    
     .showNav .bar::before {
         transform: rotate(45deg);
         transition: 0.7s;
     }
-    
     .bar::after {
         transform: translateY(12px);
     }
-    
     .showNav .bar::after {
         transform: rotate(-45deg);
         transition: 0.7s;
     }
-
     .haut {
         transform: translateX(0);
         padding-bottom: 20px;
-        
     }
-    
     .bas {
         transform: translateX(0);
         padding-bottom: 20px;

@@ -4,8 +4,6 @@
     justify-content: center;
 }
 
-
-
 .presentation_photo {
     background-image: url(../images/moi.svg);
     background-size: contain;
@@ -21,7 +19,7 @@
     color: var(--color-font);
 }
 
-.color{
+.color {
     color: rgb(78, 36, 36);
 }
 
@@ -35,14 +33,18 @@
     padding-bottom: 18px;
     margin-left: 15px;
 }
-.nom_prenom{
+
+.nom_prenom {
     margin: 0 0 5px 15px;
 }
+
 .presentation_moi {
     margin-left: 15px;
 }
 
-
+.cv {
+    margin-left: 18px;
+}
 
 @media screen and (max-width: 375px) {
     .presentation {
@@ -53,7 +55,6 @@
         margin-right: 0;
         margin-bottom: 35px;
     }
-  
 }
 
 @media screen and (max-width: 864px) {
